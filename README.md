@@ -1,4 +1,6 @@
-# CIFAR Game with [react-tinder-card](https://github.com/3DJakob/react-tinder-card) animations.
+# CIFAR Game 
+
+CIFAR Game with [react-tinder-card](https://github.com/3DJakob/react-tinder-card) animations.
 
 ## CIFAR SERVER INSTALL INSTRUCTIONS
 * Follow [cifar server](https://npm.io/package/cifar10) install instructions:
