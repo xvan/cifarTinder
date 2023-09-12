@@ -1,22 +1,14 @@
-# React Tinder Card Demo
+# CIFAR Game with [react-tinder-card](https://github.com/3DJakob/react-tinder-card) animations.
 
-A demo project to my [react-tinder-card](https://github.com/3DJakob/react-tinder-card) npm module.
+## CIFAR SERVER INSTALL INSTRUCTIONS
+* Follow [cifar server](https://npm.io/package/cifar10) install instructions:
+  * Download [cifar bininary version images](https://www.cs.toronto.edu/~kriz/cifar.html)
+  * Transform cifar10 images using `converter.js`. (place it in same folder than the `*.bin` files)
+  * Place the data folder in the root folder (next to the original `converter.js`)
+  * Execute `node cifar10-server.js` in dev folder
+  * Verify the server is working: it's on `http://localhost:1337` by default. Try to draw from categories... Drawing from the global training dataset wasn't working.
 
-## Try the demo
-
-![](demo.gif)
-
-Try the demo on the gh-pages site [here!](https://3djakob.github.io/react-tinder-card-demo/)
-
-## The code
-
-Feel free to check out the code in [react-tinder-card-demo/src/examples](https://github.com/3DJakob/react-tinder-card-demo/tree/master/src/examples) for a usage example of how this application uses the module.
-
-### Simple
-The simple example is the minimum code needed to get you started.
-
-### Advanced
-The advanced example implements a state with references to swipe and restore cards using buttons.
-
-## Demo
-Both code examples can be tested on the [demo page.](https://3djakob.github.io/react-tinder-card-demo/)
+## CIFAR GAME INSTALL instructions.
+* `npm install`
+* Verify the proxy in `package.json` points to the same place as the *CIFAR SERVER*
+* Execute with `npm start`
