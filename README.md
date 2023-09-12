@@ -1,6 +1,7 @@
 # CIFAR10 Game 
 
 CIFAR10 Game with [react-tinder-card](https://github.com/3DJakob/react-tinder-card) animations.
+The game depends on an external images server.
 
 ## CIFAR10 SERVER INSTALL INSTRUCTIONS
 * Follow [cifar10 server](https://npm.io/package/cifar10) install instructions:
