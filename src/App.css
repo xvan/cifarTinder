@@ -6,7 +6,7 @@
   min-height: 100vh;
   overflow: hidden;
   /* background: linear-gradient(#fff, #999); */
-  background: linear-gradient(#e66465, #9198e5);
+  background: linear-gradient(#bc0dae, #9198e5);
 }
 
 * {
@@ -39,10 +39,68 @@
   margin: 5px;
 }
 
-h1 {
-  font-family: 'Damion', cursive;
+.circleNumber {
+  background: rgb(122, 122, 122);
+  border-radius: 3em;
+  -moz-border-radius: 3em;
+  -webkit-border-radius: 3em;
+  color: white;
+  height: 1.8em;
+  width: 1.8em;
+  display: inline-block;
+  font-family: 'Roboto', Helvetica, Sans-serif;
+  line-height: 2em;
+  text-align: center;
+  animation-name: popup;
+  animation-duration: 800ms;
+}
+
+.refreshCircle{
+  background: white;
+  border-radius: 3em;
+  -moz-border-radius: 3em;
+  -webkit-border-radius: 3em;
+  color:  rgb(122, 122, 122);
+  height: 1.8em;
+  width: 1.8em;
+  display: inline-block;
+  font-family: 'Roboto', Helvetica, Sans-serif;
+  line-height: 2em;
+  text-align: center;
+  animation-name: popup;
+  animation-duration: 800ms;
+}
+
+a.refreshCircle:link {
+  text-decoration: none;  
+}
+
+a.refreshCircle:visited {
+  text-decoration: none;
+}
+
+a.refreshCircle:hover {
+  text-decoration: none;
+  transform: scale(1.3);
+  color: red;
+  background: white; 
+}
+
+a.refreshCircle:active {
+  text-decoration: none;
+  color: red;
+  background: rgb(122, 122, 122);
+}
+
+.titlebox{
+  height:4em;
+}
+
+h1 {  
   color: #fff;
   text-shadow: 0px 0px 60px 0px rgba(0,0,0,0.30);
+  animation-name: popup;
+  animation-duration: 800ms;
 }
 
 h2 {
@@ -53,10 +111,20 @@ h2 {
   position: absolute;
 }
 
+
+.commonBorder > canvas {
+  box-shadow: 0px 0px 60px 0px rgba(0,0,0,0.30);
+}
+
+.lostBorder > canvas {
+  box-shadow: 0px 0px 60px 0px rgb(255, 0, 0);
+}
+
 .cardContainer {
   width: 90vw;
   max-width: 260px;
   aspect-ratio : 1 / 1;
+  margin: 60px;
 }
 
 .card {
@@ -73,7 +141,7 @@ h2 {
 
 .cardContent {
   width: 100%;
-  height: 100%;
+  height: 100%; 
 }
 
 .swipe:last-of-type {
@@ -87,6 +155,7 @@ h2 {
   color: #fff;
 }
 
+
 .infoText {
   width: 100%;
   justify-content: center;
@@ -94,6 +163,14 @@ h2 {
   color: #fff;
   animation-name: popup;
   animation-duration: 800ms;
+}
+
+.placeholder{
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  color: #fff;
+  visibility: hidden;
 }
 
 .buttons {
@@ -106,6 +183,12 @@ h2 {
   .buttons {
     flex-direction: column;
   }
+}
+
+.lostBox{
+  color: red;
+  text-shadow: 2px 0 #fff, -2px 0 #fff, 0 2px #fff, 0 -2px #fff,
+             1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
 }
 
 
@@ -146,6 +229,7 @@ h2 {
 .buttons button:hover {
   transform: scale(1.05);
 }
+
 
 @keyframes popup {
   0%   { transform: scale(1,1) }
