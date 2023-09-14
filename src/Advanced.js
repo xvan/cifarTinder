@@ -2,6 +2,7 @@ import React, { useState, useMemo, useRef, useEffect  } from 'react'
 import TinderCard from 'react-tinder-card'
 import Canvas from './Canvas'
 import Crypto from 'crypto-js'
+import Icon from './Icon.js'
 
 function Advanced () {
   
@@ -146,7 +147,7 @@ const endAnimation = () =>{
         href='https://fonts.googleapis.com/css?family=Alatsi&display=swap'
         rel='stylesheet'
       />
-      
+      <Icon/>
 
       <div className='titlebox'>
         { lost ? 

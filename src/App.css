@@ -5,8 +5,8 @@
   width: 100vw;
   min-height: 100vh;
   overflow: hidden;
-  /* background: linear-gradient(#fff, #999); */
-  background: linear-gradient(#bc0dae, #9198e5);
+  /* background: linear-gradient(#fff, #999); #003057*/
+  background: linear-gradient(#0695d6,#003057);
 }
 
 * {
@@ -82,13 +82,13 @@ a.refreshCircle:visited {
 a.refreshCircle:hover {
   text-decoration: none;
   transform: scale(1.3);
-  color: red;
+  color: rgb(220, 0, 0);
   background: white; 
 }
 
 a.refreshCircle:active {
   text-decoration: none;
-  color: red;
+  color: rgb(220, 0, 0);
   background: rgb(122, 122, 122);
 }
 
@@ -113,11 +113,11 @@ h2 {
 
 
 .commonBorder > canvas {
-  box-shadow: 0px 0px 60px 0px rgba(0,0,0,0.30);
+  box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.30);
 }
 
 .lostBorder > canvas {
-  box-shadow: 0px 0px 60px 0px rgb(255, 0, 0);
+  box-shadow: 0px 0px 40px 0px rgb(220, 0, 0);
 }
 
 .cardContainer {
@@ -186,7 +186,7 @@ h2 {
 }
 
 .lostBox{
-  color: red;
+  color: rgb(220, 0, 0);
   text-shadow: 2px 0 #fff, -2px 0 #fff, 0 2px #fff, 0 -2px #fff,
              1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
 }
@@ -195,7 +195,8 @@ h2 {
 .iconButtons button{
   flex-shrink: 0;
   border-radius: 5px;
-  background-color: #9198e5;
+  /* background-color: #9198e5; */
+  background-color: #0695d6;
   font-size: 50px;
   padding: 10px;
   flex-shrink: 0;
@@ -205,6 +206,8 @@ h2 {
   transition: 200ms;
   box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.10);
   border: none;
+  text-shadow: 2px 0 #fff, -2px 0 #fff, 0 2px #fff, 0 -2px #fff,
+             1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
 }
 
 .buttons button {
@@ -230,6 +233,11 @@ h2 {
   transform: scale(1.05);
 }
 
+.header{
+  display: flex;
+  justify-content: space-between;
+  height: 20px;
+}
 
 @keyframes popup {
   0%   { transform: scale(1,1) }
