@@ -3,7 +3,8 @@
   "homepage": "/react-tinder-card-demo",
   "version": "0.1.0",
   "private": false,
-  "proxy": "http://localhost:1337",
+  "allowedHosts": "all",
+  "proxy-off": "http://127.0.0.1:1337",
   "dependencies": {
     "@react-spring/web": "^9.5.5",
     "@testing-library/jest-dom": "^5.16.5",

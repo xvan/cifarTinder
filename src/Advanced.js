@@ -60,7 +60,7 @@ function Advanced () {
     var header = {"Content-Type": "application/json"};
 
     
-    fetch('/category.training.get', {
+    fetch('/api/category.training.get', {
       method: "POST",
       headers: header,
       body: JSON.stringify(postdata),
